@@ -24,7 +24,4 @@ EXPOSE 4000/tcp
 # Start the litellm proxy, using the `litellm` cli command https://docs.litellm.ai/docs/simple_proxy
 
 # Start the litellm proxy with default options
-CMD ["--port", "4000"]
-
-# Allow users to override the CMD when running the container, allows users to pass litellm args 
-ENTRYPOINT ["litellm"]
+CMD litellm --config proxy_server_config.yaml --debug --port 4000
