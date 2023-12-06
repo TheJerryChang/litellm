@@ -5,7 +5,7 @@ model_list:
       api_base: https://tripknowproduction1.openai.azure.com/
       api_key: "os.environ/AZURE_API_KEY"
       api_version: "2023-08-01-preview"
-  - model_name: gpt-4-turbo
+  - model_name: gpt-4
     litellm_params:
       model: azure/tripknow4
       api_base: https://tripknowproduction1.openai.azure.com/
