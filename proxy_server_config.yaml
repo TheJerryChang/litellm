@@ -3,13 +3,13 @@ model_list:
     litellm_params:
       model: azure/tripknow35
       api_base: https://tripknowproduction1.openai.azure.com/
-      api_key: a612104966ae4990861a9fd8c7459052
+      api_key: "os.environ/AZURE_API_KEY"
       api_version: "2023-08-01-preview"
   - model_name: gpt-4-turbo
     litellm_params:
       model: azure/tripknow4
       api_base: https://tripknowproduction1.openai.azure.com/
-      api_key: a612104966ae4990861a9fd8c7459052
+      api_key: "os.environ/AZURE_API_KEY"
       api_version: "2023-08-01-preview"
 
 litellm_settings:
